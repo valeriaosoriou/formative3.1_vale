@@ -1,5 +1,5 @@
 {
-  "name": "formative3.1_vale",
+  "name": "exit",
   "version": "1.0.0",
   "description": "formative",
   "main": "index.js",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/valeriaosoriou/formative3.1_vale#readme",
   "devDependencies": {
+    "@popperjs/core": "^2.0.6",
     "bootstrap": "^4.4.1",
     "grunt": "^1.0.4",
     "grunt-contrib-csslint": "^2.0.0",
@@ -29,5 +30,8 @@
     "grunt-contrib-watch": "^1.1.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1"
+  },
+  "dependencies": {
+    "grunt-express-server": "^0.5.4"
   }
 }

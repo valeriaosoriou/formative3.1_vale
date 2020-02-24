@@ -7,14 +7,95 @@
     <title>Formative 3.1</title>
   </head>
   
-  <body>
-    <h1 class="text-warning">Formative 3.1 Vale</h1>
+  <body class="container">
+    <h1 class="jumbotron bg-info text-center">API NEWS</h1>
+      
+
+<!-- MENU CHOICES -->
+    <nav class="navbar navbar-light bg-primary sticky-top">
+
+      <select id="categories" class="btn btn-primary btn-lg" name="categories" >
+        <option class="dropdown-item" href="#" value="all">All Categories</option>
+        <option class="dropdown-item" href="#" value="general">General</option>
+        <option class="dropdown-item" href="#" value="technology">Technology</option>
+        <option class="dropdown-item" href="#" value="business">Business</option>
+        <option class="dropdown-item" href="#" value="sports">Sports</option>
+        <option class="dropdown-item" href="#" value="science">Science</option>
+        <option class="dropdown-item" href="#" value="entertainment">Entertainment</option>
+        <option class="dropdown-item" href="#" value="health">Health</option>
+      </select>
+
+      <select id="countries" class="btn btn-primary btn-lg" name="countries">
+          <option class="dropdown-item" href="#" value="#">All Countries</option>
+          <option class="dropdown-item" href="#" value="ar">Argentina</option>
+          <option class="dropdown-item" href="#" value="at">Austria</option>
+          <option class="dropdown-item" href="#" value="au">Australia</option>
+          <option class="dropdown-item" href="#" value="be">Belgium</option>
+          <option class="dropdown-item" href="#" value="br">Brazil</option>
+          <option class="dropdown-item" href="#" value="bg">Bulgaria</option>
+          <option class="dropdown-item" href="#" value="ca">Canada</option>
+          <option class="dropdown-item" href="#" value="cn">China</option>
+          <option class="dropdown-item" href="#" value="co">Colombia</option>
+          <option class="dropdown-item" href="#" value="cu">Cuba</option>
+          <option class="dropdown-item" href="#" value="cz">Czech Republic</option>
+          <option class="dropdown-item" href="#" value="eg">Egypt</option>
+          <option class="dropdown-item" href="#" value="fr">France</option>
+          <option class="dropdown-item" href="#" value="de">Germany</option>
+          <option class="dropdown-item" href="#" value="gr">Greece</option>
+          <option class="dropdown-item" href="#" value="hk">Hong Kong</option>
+          <option class="dropdown-item" href="#" value="hu">Hungary</option>
+          <option class="dropdown-item" href="#" value="in">India</option>
+          <option class="dropdown-item" href="#" value="id">Indonesia</option>
+          <option class="dropdown-item" href="#" value="ie">Ireland</option>
+          <option class="dropdown-item" href="#" value="il">Israel</option>
+          <option class="dropdown-item" href="#" value="it">Italy</option>
+          <option class="dropdown-item" href="#" value="jp">Japan</option>
+          <option class="dropdown-item" href="#" value="lv">Latvia</option>
+          <option class="dropdown-item" href="#" value="lt">Lithuania</option>
+          <option class="dropdown-item" href="#" value="my">Malasya</option>
+          <option class="dropdown-item" href="#" value="mx">Mexico</option>
+          <option class="dropdown-item" href="#" value="ma">Morocco</option>
+          <option class="dropdown-item" href="#" value="nl">Netherlands</option>
+          <option class="dropdown-item" href="#" value="nz">New Zealand</option>
+          <option class="dropdown-item" href="#" value="ng">Nigeria</option>
+          <option class="dropdown-item" href="#" value="no">Norway</option>
+          <option class="dropdown-item" href="#" value="ph">Philippines</option>
+          <option class="dropdown-item" href="#" value="pl">Poland</option>
+          <option class="dropdown-item" href="#" value="pt">Portugal</option>
+          <option class="dropdown-item" href="#" value="ro">Romania</option>
+          <option class="dropdown-item" href="#" value="ru">Russia</option>
+          <option class="dropdown-item" href="#" value="sa">Saudi Arabia</option>
+          <option class="dropdown-item" href="#" value="rs">Serbia</option>
+          <option class="dropdown-item" href="#" value="sg">Singapore</option>
+          <option class="dropdown-item" href="#" value="#"></option>
+
+        </select>
+
+        <select id="sources" class="btn btn-primary btn-lg" name="sources">
+          <option class="dropdown-item" href="#" value="#">Sources</option>
+          <option class="dropdown-item" href="#" value="#"></option>
+          <option class="dropdown-item" href="#" value="#"></option>
+          <option class="dropdown-item" href="#" value="#"></option>
+          <option class="dropdown-item" href="#" value="#"></option>
+        </select>
+
+        <button id="submit" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </nav>
 
 
 
+
+<!-- RESULTS -->
+    <div class="row" id="result"></div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+      <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="js/config.json"> </script>
       <script src="js/script.js"></script>
   </body>
 </html>
