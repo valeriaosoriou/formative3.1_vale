@@ -12,6 +12,7 @@ $(document).ready(function(){
 	//READING USER CHOICE
 	var category;
 	var country;
+
 	var source;
 
 	document.getElementById('submit').addEventListener('click', function(){
@@ -22,35 +23,36 @@ $(document).ready(function(){
 	  displayData(category, country, source);
 	}); //reading user choice
 
-	//DISPLAY DATA FUNCTIONRIGHT BEFORE AJAX, you can name the variables as you want ep/si
-	function displayData(ca, co, so){
+	//DISPLAY DATA FUNCTIONRIGHT BEFORE AJAX, you can name the variables as you want ca=category; co=country; so=source
+	function displayData(cat, count, sour){
 	//AJAX METHOD
 	$.ajax({
-		url : `http://newsapi.org/v2/top-headlines?country=${co}&category=${ca}&apiKey=${myKey}`,
+		url : `http://newsapi.org/v2/top-headlines?country=${count}&category=${cat}&apiKey=${myKey}`,
 		type :'GET',
 		data :'json',
 		success:function(data){
 				console.log(data);
+				console.dir(data)
 
-				var i;
-	    		for (i=0; i<data.length; i++){
-			    	document.getElementById('result').innerHTML;  
-			    	// +=
-			    	// '<div class="col col-sm-6 col-md-4 col-lg-3 border border-primary">' +
-			    	// '<h1>' + data[i].status  + '</h1>' +
-			    	// '<h2>' + data[i].articles[i].author + '</h2>' ;
-			    	// // '<h3>' + data[i].email + '<h3>' +
-			    	// // '<img class="img-thumbnail" src="' + data[i].avatar + '" alt="Avatar">' +    
-			    	// // '</div>';
-			    }
+				for (var i=0; i<data.articles.length;i++){
+					console.log(data.articles[i].urlToImage);
+					document.getElementById('result').innerHTML +=
 
-
-		},//end data
+			        '<div class="col-4 card">' +
+			          '<img class="card-img-top" alt="Image" src= "'+ data.articles[i].urlToImage +'">' +
+			          '<div class="card-body">' +
+			          	'<h5 class= "card-title">'+ data.articles[i].title +'</h5>' +
+			          	`<a href="${data.articles[i].url}" class="btn btn-primary">Read more </a>`
+			          '</div>'
+			        '</div>';
+				}
+	
+		},
 		error:function(){
 				console.log('error');
 		}//end error
 	});//end of Ajax
 
-	}; //end function display data
+	} //end function display data
 
 });//end of ApiKey
