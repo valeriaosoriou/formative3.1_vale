@@ -8,14 +8,14 @@
   </head>
   
   <body class="container">
-    <h1 class="jumbotron bg-info text-center">API NEWS</h1>
+    <h1 class="jumbotron bg-info text-center">API.news</h1>
       
 
 <!-- MENU CHOICES -->
     <nav class="navbar navbar-light bg-primary sticky-top">
 
       <select id="categories" class="btn btn-primary btn-lg" name="categories" >
-        <option class="dropdown-item" href="#" value="#">Select Category</option>
+        <option class="dropdown-item" href="#" value="">Select Category</option>
         <option class="dropdown-item" href="#" value="general">General</option>
         <option class="dropdown-item" href="#" value="technology">Technology</option>
         <option class="dropdown-item" href="#" value="business">Business</option>
@@ -26,7 +26,8 @@
       </select>
 
       <select id="countries" class="btn btn-primary btn-lg" name="countries">
-          <option class="dropdown-item" href="#" value="#">Select Country</option>
+          <option class="dropdown-item" href="#" value="">Select Country</option>
+          <option class="dropdown-item" href="#" value="nz">New Zealand</option>
           <option class="dropdown-item" href="#" value="ar">Argentina</option>
           <option class="dropdown-item" href="#" value="at">Austria</option>
           <option class="dropdown-item" href="#" value="au">Australia</option>
@@ -47,7 +48,6 @@
           <option class="dropdown-item" href="#" value="lt">Lithuania</option>
           <option class="dropdown-item" href="#" value="ma">Morocco</option>
           <option class="dropdown-item" href="#" value="nl">Netherlands</option>
-          <option class="dropdown-item" href="#" value="nz">New Zealand</option>
           <option class="dropdown-item" href="#" value="ng">Nigeria</option>
           <option class="dropdown-item" href="#" value="no">Norway</option>
           <option class="dropdown-item" href="#" value="ph">Philippines</option>
@@ -55,18 +55,27 @@
           <option class="dropdown-item" href="#" value="sg">Singapore</option>
         </select>
 
-        <select id="sources" class="btn btn-primary btn-lg" name="sources">
+        <!-- <select id="sources" class="btn btn-primary btn-lg" name="sources">
           <option class="dropdown-item" href="#" value="#">Sources</option>
           <option class="dropdown-item" href="#" value="topHeadlines">Top Headlines</option>
           <option class="dropdown-item" href="#" value="Everything">Everything</option>
           
-        </select>
+        </select> -->
 
         <button id="submit" class="btn btn-lg btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </nav>
 
 
-
+<!-- WEATHER -->
+    <div id="6a5c46a7a57b62588f636a3a352fc3b7" class="ww-informers-box-854753">
+      <p class="ww-informers-box-854754">
+        <a href="https://world-weather.info/forecast/new_zealand/wellington/">Read more</a><br>
+        <a href="https://world-weather.info/forecast/usa/peoria/">https://world-weather.info/forecast/usa/peoria/</a>
+      </p>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="https://world-weather.info/wwinformer.php?userid=6a5c46a7a57b62588f636a3a352fc3b7">
+    </script>
+    <style>.ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center}@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}</style>
 
 <!-- RESULTS -->
     <div class="row" id="result"></div>
