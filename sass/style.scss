@@ -20,6 +20,9 @@ h1 {
     font-size: 95px;
     color: #e9ecef;
 }
+.jumbotron{
+  margin-bottom: 0rem;
+  }
 
 //SEARCH BUTTON MENU //button#submit.btn.btn-lg.btn-outline-success.my-2.my-sm-0
 .btn-outline-success {
@@ -65,3 +68,15 @@ h1 {
     width: 1110px !important;
 }
 
+//AUTHOR
+.author{
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+//CREATOR IMG
+.img {
+  height: auto;
+  width: 450px;
+  margin-left: 95px;
+  }

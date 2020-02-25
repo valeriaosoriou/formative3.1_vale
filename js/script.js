@@ -37,13 +37,21 @@ $(document).ready(function(){
 					console.log(data.articles[i].urlToImage);
 					document.getElementById('result').innerHTML +=
 
-			        '<div class="col-4 card">' +
-			          '<img class="card-img-top card-img-style" alt="Image" src= "'+ data.articles[i].urlToImage +'">' +
-			          '<div class="card-body">' +
-			          	'<h5 class= "card-title">'+ data.articles[i].title +'</h5>' +
-			          	`<a href="${data.articles[i].url}" class="btn btn-primary btn-card">Read more </a>`
-			          '</div>'
-			        '</div>';
+			        // '<div class="col-4 card">' +
+			        //   '<img class="card-img-top card-img-style" alt="Image" src= "'+ data.articles[i].urlToImage +'">' +
+			        //   '<div class="card-body">' +
+			        //   	`<h5 class= "card-title">${data.articles[i].title}</h5>` +
+			        //   	`<a href="${data.articles[i].url}" class="btn btn-primary btn-card">Read more </a>`
+			        //   '</div>'
+			        // '</div>';
+			        `<div class="col-4 card">
+			          <img class="card-img-top card-img-style" alt="Image" src= "${data.articles[i].urlToImage}">
+			          <div class="card-body">
+			          	<h5 class= "card-title">${data.articles[i].title}</h5>
+			          	<a href="${data.articles[i].url}" class="btn btn-primary btn-card">Read more</a>
+			          </div>
+			        </div>`;
+
 				}
 	
 		},
