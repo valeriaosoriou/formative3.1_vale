@@ -21,6 +21,10 @@ h1 {
   color: #e9ecef;
 }
 
+.jumbotron {
+  margin-bottom: 0rem;
+}
+
 .btn-outline-success {
   color: #f8f9fa;
   border-color: #17a2b8;
@@ -63,6 +67,17 @@ h1 {
 
 .wwrun {
   width: 1110px !important;
+}
+
+.author {
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.img {
+  height: auto;
+  width: 450px;
+  margin-left: 95px;
 }
 
 /*# sourceMappingURL=style.css.map */
